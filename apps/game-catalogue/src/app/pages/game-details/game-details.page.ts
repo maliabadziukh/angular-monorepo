@@ -8,4 +8,4 @@ import {ButtonComponent}  from "@angular-monorepo/atoms"
   templateUrl: './game-details.page.html',
   styleUrl: './game-details.page.css',
 })
-export class GameDetailsPage {}
+export class GameDetailsPageComponent {}

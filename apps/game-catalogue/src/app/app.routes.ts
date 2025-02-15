@@ -11,7 +11,7 @@ export const appRoutes: Route[] = [
     path: 'game-details',
     loadComponent: () =>
       import('./pages/game-details/game-details.page').then(
-        (m) => m.GameDetailsPage
+        (m) => m.GameDetailsPageComponent
       ),
   },
 ];
