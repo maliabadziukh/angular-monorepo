@@ -9,7 +9,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        // Add 'VT323' to the font family list
+        vt323: ['VT323', 'monospace'],  // This is where you define the font
+      },
     },
   },
   plugins: [],
