@@ -18,7 +18,8 @@
       "@angular-monorepo/atoms": ["libs/shared/ui/atoms/src/index.ts"],
       "@angular-monorepo/game-catalogue/pages/*": [
         "apps/game-catalogue/src/app/pages/*"
-      ]
+      ],
+      "@angular-monorepo/molecules": ["libs/shared/ui/molecules/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

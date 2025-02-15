@@ -7,5 +7,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'game-catalogue';
+  title = 'Game Catalogue';
 }
