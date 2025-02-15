@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-monorepo/game": ["libs/game/src/index.ts"],
-      "@angular-monorepo/ui": ["libs/shared/ui/src/index.ts"]
+      "@angular-monorepo/atoms": ["libs/shared/ui/atoms/src/index.ts"],
+      "@angular-monorepo/game-catalogue/pages/*": [
+        "apps/game-catalogue/src/app/pages/*"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
