@@ -1,6 +1,8 @@
-<nav class="bg-black text-white">
-    <div class="flex py-2 px-4 justify-between">
+<nav>
+    <div class="bg-black text-white flex py-2 px-4 justify-between">
       <a href="/" class="text-xl">Game Catalogue</a>
-      <button lib-button><lib-icon name="menu" [size]="28" icon></lib-icon></button>
+      <button lib-button (click)="openMenu()"><lib-icon name="menu" [size]="28" icon></lib-icon></button>
   </div>
+  <lib-menu-modal [isOpen]="isMenuOpen()" (close)="closeMenu()">
+  </lib-menu-modal>
   </nav>
