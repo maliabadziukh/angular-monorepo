@@ -1,6 +1,13 @@
-<div *ngIf="isOpen()" class="fixed inset-0 bg-black bg-opacity-50 flex justify-end items-start z-50">
-    <div class="bg-white p-6  max-w-lg w-4/5 right-0">
-        <button lib-button (click)="close.emit()"><lib-icon name="close" [size]="28"></lib-icon></button>
-      <ng-content></ng-content>
-    </div>
+<div
+  *ngIf="isOpen()"
+  class="fixed inset-0 z-50 flex flex-col "
+  
+>
+  <div class="w-full bg-black p-6 text-white opacity-90">
+    <button lib-button (click)="close.emit()">
+      <lib-icon name="close" [size]="28"></lib-icon>
+    </button>
+    <ng-content></ng-content>
   </div>
+  <div class="h-full w-full" (click)="close.emit()"></div>
+</div>
