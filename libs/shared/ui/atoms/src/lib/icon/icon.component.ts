@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 @Component({
-  selector: 'app-home',
+  selector: 'lib-icon',
   imports: [CommonModule],
-  templateUrl: './home.page.html',
-  styleUrl: './home.page.css',
+  templateUrl: './icon.component.html',
+  styleUrl: './icon.component.css',
 })
-export class HomePage {}
+export class IconComponent {}

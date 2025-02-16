@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { GameCardComponent } from './game-card.component';
+import { MenuModalComponent } from './menu-modal.component';
 
-describe('GameCardComponent', () => {
-  let component: GameCardComponent;
-  let fixture: ComponentFixture<GameCardComponent>;
+describe('MenuModalComponent', () => {
+  let component: MenuModalComponent;
+  let fixture: ComponentFixture<MenuModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GameCardComponent],
+      imports: [MenuModalComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GameCardComponent);
+    fixture = TestBed.createComponent(MenuModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

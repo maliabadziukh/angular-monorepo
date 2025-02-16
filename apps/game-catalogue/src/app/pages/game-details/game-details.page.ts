@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {ButtonComponent}  from "@angular-monorepo/atoms"
+import {ButtonComponent}  from "@angular-monorepo/molecules"
 
 @Component({
   selector: 'app-game-details',
