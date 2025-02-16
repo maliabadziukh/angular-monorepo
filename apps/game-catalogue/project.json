@@ -85,6 +85,55 @@
         "staticFilePath": "dist/apps/game-catalogue/browser",
         "spa": true
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "apps/game-catalogue/.storybook",
+        "browserTarget": "game-catalogue:build",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/game-catalogue",
+        "configDir": "apps/game-catalogue/.storybook",
+        "browserTarget": "game-catalogue:build",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c apps/game-catalogue/.storybook --url=http://localhost:4400"
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "dependsOn": ["build-storybook"],
+      "options": {
+        "buildTarget": "game-catalogue:build-storybook",
+        "staticFilePath": "dist/storybook/game-catalogue",
+        "spa": true
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "game-catalogue:build-storybook:ci"
+        }
+      }
     }
   }
 }
