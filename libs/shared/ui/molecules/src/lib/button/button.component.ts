@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'lib-button',
+  selector: 'button[lib-button]',
   imports: [CommonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.css',
