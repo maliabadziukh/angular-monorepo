@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,4 +7,9 @@ import { CommonModule } from '@angular/common';
   templateUrl: './icon.component.html',
   styleUrl: './icon.component.css',
 })
-export class IconComponent {}
+export class IconComponent {
+  name = input('home');
+  size = input<number>(6);
+
+  sizeClass = computed(()=>`w-${this.size} h-${this.size}`);
+}
