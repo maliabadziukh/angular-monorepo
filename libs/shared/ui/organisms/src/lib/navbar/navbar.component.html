@@ -1,7 +1,7 @@
 <nav>
-  <div class="h-16 bg-black">
-    <div class="mx-auto flex max-w-6xl justify-between px-6 py-4 text-white">
-      <a href="/" class="text-xl">Game Catalogue</a>
+  <div class=" bg-black">
+    <div class="mx-auto flex max-w-6xl justify-between px-6 text-white">
+      <a href="/" class="text-xl py-4">Game Catalogue</a>
       <button lib-button (click)="openMenu()" class="md:hidden">
         <lib-icon name="menu" [size]="28" icon></lib-icon>
       </button>
@@ -11,7 +11,7 @@
       ></lib-nav-links>
     </div>
   </div>
-  <lib-menu-modal [isOpen]="isMenuOpen()" (close)="closeMenu()">
+  <lib-menu-modal [isOpen]="isMenuOpen()" (close)="closeMenu()" class="block md:hidden">
     <lib-nav-links [navLinks]="menuLinks" class="grow"></lib-nav-links>
   </lib-menu-modal>
 </nav>

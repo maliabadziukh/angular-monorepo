@@ -1,7 +1,6 @@
 <div *ngIf="isOpen()" class="fixed inset-0 z-50 flex flex-col">
   <div class="flex w-full items-start bg-black/90 px-6 py-4 text-white">
     <ng-content></ng-content>
-
     <button lib-button (click)="close.emit()">
       <lib-icon name="close" [size]="28"></lib-icon>
     </button>
