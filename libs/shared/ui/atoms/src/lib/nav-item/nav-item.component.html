@@ -1,5 +1,7 @@
-
-  <a [href]="target()" class="block text-center h-full py-4 md:px-2 md:mx-1 hover:bg-indigo-900 "
-    ><ng-content
-  /></a>
-
+<a
+  [routerLink]="target()"
+  routerLinkActive="active"
+  ariaCurrentWhenActive="page"
+  class="block h-full py-4 text-center hover:bg-indigo-900 md:mx-1 md:px-2"
+  ><ng-content
+/></a>

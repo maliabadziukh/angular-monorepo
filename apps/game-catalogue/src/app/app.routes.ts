@@ -1,5 +1,6 @@
 import { Route } from '@angular/router';
 import { HomePage } from './pages/home/home.page';
+import { GameDetailsPageComponent } from './pages/game-details/game-details.page';
 
 export const appRoutes: Route[] = [
   {
@@ -9,9 +10,6 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'game-details',
-    loadComponent: () =>
-      import('./pages/game-details/game-details.page').then(
-        (m) => m.GameDetailsPageComponent
-      ),
+    component: GameDetailsPageComponent,
   },
 ];

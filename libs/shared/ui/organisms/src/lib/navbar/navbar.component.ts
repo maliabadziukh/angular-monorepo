@@ -6,6 +6,7 @@ import {
   NavLinksComponent,
 } from '@angular-monorepo/molecules';
 import { MenuModalComponent } from '@angular-monorepo/organisms';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'lib-navbar',
@@ -15,6 +16,7 @@ import { MenuModalComponent } from '@angular-monorepo/organisms';
     IconComponent,
     MenuModalComponent,
     NavLinksComponent,
+    RouterModule, RouterLink, RouterLinkActive
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
@@ -24,7 +26,7 @@ export class NavbarComponent {
     { name: 'All Games', target: '/' },
     { name: 'Top 100', target: '/' },
     { name: 'By Genre', target: '/' },
-    { name: 'By Platform', target: '/' },
+    { name: 'Game-detail', target: '/game-details' },
   ];
   isMenuOpen = signal(false);
 
